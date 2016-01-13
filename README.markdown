@@ -13,17 +13,28 @@ Quick start:
 **NOTE**: If you are behind a proxy, make sure you configure it by
 editing `gradle.properties`.
 
-1. Generate code and the `IDEA` configuration:
+* Rename the package
+
+```
+NEW_PACKAGE_NAME=my.company.and.project
+./rename_package.bash $NEW_PACKAGE_NAME
+```
+
+(The `rename_package.bash` script is very hacky. It also relies on
+gnu-sed, so if yours is not in your `PATH` variable you can manually set
+it: `SED=gsed ./rename_package.bash my.new.package`)
+
+* Generate code and the `IDEA` configuration:
 
 ```sh
 ./gradlew build
 ./gradlew idea
 ```
 
-2. Import the project into `IDEA` (or just use whatever you prefer,
+* Import the project into `IDEA` (or just use whatever you prefer,
    actually)
 
-3. Start the server:
+* Start the server:
 
 ```sh
 ./gradlew runServer
