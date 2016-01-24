@@ -11,7 +11,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.google.protobuf:protobuf-gradle-plugin:0.6.1'
+        classpath 'com.google.protobuf:protobuf-gradle-plugin:0.7.3'
     }
 }
 
@@ -20,11 +20,11 @@ protobuf {
         // The version of protoc must match protobuf-java. If you don't depend on
         // protobuf-java directly, you will be transitively depending on the
         // protobuf-java version that grpc depends on.
-        artifact = "com.google.protobuf:protoc:3.0.0-beta-1"
+        artifact = "com.google.protobuf:protoc:3.0.0-beta-2"
     }
     plugins {
         grpc {
-            artifact = 'io.grpc:protoc-gen-grpc-java:0.9.0'
+            artifact = 'io.grpc:protoc-gen-grpc-java:0.12.0'
         }
     }
     generateProtoTasks {
@@ -43,7 +43,7 @@ repositories {
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.11'
-    compile 'io.grpc:grpc-all:0.9.0'
+    compile 'io.grpc:grpc-all:0.12.0'
 }
 
 idea {
