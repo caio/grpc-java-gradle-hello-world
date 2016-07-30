@@ -1,30 +1,32 @@
-group 'io.github.caio.grpc'
-version '1.0-SNAPSHOT'
-
-apply plugin: 'application'
-apply plugin: 'java'
-apply plugin: 'com.google.protobuf'
-apply plugin: 'idea'
-
 buildscript {
     repositories {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.google.protobuf:protobuf-gradle-plugin:0.7.3'
+        classpath 'com.google.protobuf:protobuf-gradle-plugin:0.7.7'
     }
 }
+
+plugins {
+  id "com.google.protobuf" version "0.7.7"
+  id "java"
+  id "application"
+  id "idea"
+}
+
+group 'io.github.caio.grpc'
+version '1.0-SNAPSHOT'
 
 protobuf {
     protoc {
         // The version of protoc must match protobuf-java. If you don't depend on
         // protobuf-java directly, you will be transitively depending on the
         // protobuf-java version that grpc depends on.
-        artifact = "com.google.protobuf:protoc:3.0.0-beta-2"
+        artifact = "com.google.protobuf:protoc:3.0.0-beta-4"
     }
     plugins {
         grpc {
-            artifact = 'io.grpc:protoc-gen-grpc-java:0.12.0'
+            artifact = 'io.grpc:protoc-gen-grpc-java:0.15.0'
         }
     }
     generateProtoTasks {
@@ -36,14 +38,15 @@ protobuf {
 }
 
 sourceCompatibility = 1.8
+targetCompatibility = 1.8
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.11'
-    compile 'io.grpc:grpc-all:0.12.0'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile 'io.grpc:grpc-all:0.15.0'
 }
 
 idea {
