@@ -8,7 +8,14 @@ posterity.
 This code is pretty much gRPC's java hello world example, but on
 a separate repository and a bit opinionated on generated code placement.
 
-Quick start:
+## Contents
+
+* Java 1.8
+* Gradle 2.14.1
+* gRPC-java 0.15.0
+
+
+## Quick start
 
 **NOTE**: If you are behind a proxy, make sure you configure it by
 editing `gradle.properties`.
