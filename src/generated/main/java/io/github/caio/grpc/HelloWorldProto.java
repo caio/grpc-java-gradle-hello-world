@@ -17,12 +17,12 @@ public final class HelloWorldProto {
   static final com.google.protobuf.Descriptors.Descriptor
     internal_static_helloworld_HelloRequest_descriptor;
   static final 
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_helloworld_HelloRequest_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
     internal_static_helloworld_HelloResponse_descriptor;
   static final 
-    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_helloworld_HelloResponse_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
@@ -55,13 +55,13 @@ public final class HelloWorldProto {
     internal_static_helloworld_HelloRequest_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_helloworld_HelloRequest_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_helloworld_HelloRequest_descriptor,
         new java.lang.String[] { "Name", });
     internal_static_helloworld_HelloResponse_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_helloworld_HelloResponse_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_helloworld_HelloResponse_descriptor,
         new java.lang.String[] { "Message", });
   }

@@ -19,7 +19,7 @@ public class HelloWorldServer {
         logger.info("Starting the grpc server");
 
         server = ServerBuilder.forPort(port)
-                .addService(GreeterGrpc.bindService(new GreeterImpl()))
+                .addService(new GreeterImpl())
                 .build()
                 .start();
 
@@ -53,7 +53,7 @@ public class HelloWorldServer {
         }
     }
 
-    private class GreeterImpl implements GreeterGrpc.Greeter {
+    private class GreeterImpl extends GreeterGrpc.GreeterImplBase {
 
         @Override
         public void sayHello(HelloRequest request, StreamObserver<HelloResponse> responseObserver) {

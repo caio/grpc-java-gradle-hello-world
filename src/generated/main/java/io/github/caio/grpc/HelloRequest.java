@@ -11,11 +11,11 @@ package io.github.caio.grpc;
  * Protobuf type {@code helloworld.HelloRequest}
  */
 public  final class HelloRequest extends
-    com.google.protobuf.GeneratedMessage implements
+    com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:helloworld.HelloRequest)
     HelloRequestOrBuilder {
   // Use HelloRequest.newBuilder() to construct.
-  private HelloRequest(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+  private HelloRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
   private HelloRequest() {
@@ -69,7 +69,7 @@ public  final class HelloRequest extends
     return io.github.caio.grpc.HelloWorldProto.internal_static_helloworld_HelloRequest_descriptor;
   }
 
-  protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
     return io.github.caio.grpc.HelloWorldProto.internal_static_helloworld_HelloRequest_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
@@ -123,7 +123,7 @@ public  final class HelloRequest extends
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     if (!getNameBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessage.writeString(output, 1, name_);
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, name_);
     }
   }
 
@@ -133,7 +133,7 @@ public  final class HelloRequest extends
 
     size = 0;
     if (!getNameBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessage.computeStringSize(1, name_);
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, name_);
     }
     memoizedSize = size;
     return size;
@@ -193,39 +193,39 @@ public  final class HelloRequest extends
   }
   public static io.github.caio.grpc.HelloRequest parseFrom(java.io.InputStream input)
       throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessage
+    return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
   public static io.github.caio.grpc.HelloRequest parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessage
+    return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
   public static io.github.caio.grpc.HelloRequest parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessage
+    return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
   public static io.github.caio.grpc.HelloRequest parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessage
+    return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
   public static io.github.caio.grpc.HelloRequest parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessage
+    return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
   public static io.github.caio.grpc.HelloRequest parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
-    return com.google.protobuf.GeneratedMessage
+    return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
@@ -243,7 +243,7 @@ public  final class HelloRequest extends
 
   @java.lang.Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -255,7 +255,7 @@ public  final class HelloRequest extends
    * Protobuf type {@code helloworld.HelloRequest}
    */
   public static final class Builder extends
-      com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+      com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:helloworld.HelloRequest)
       io.github.caio.grpc.HelloRequestOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
@@ -263,7 +263,7 @@ public  final class HelloRequest extends
       return io.github.caio.grpc.HelloWorldProto.internal_static_helloworld_HelloRequest_descriptor;
     }
 
-    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
       return io.github.caio.grpc.HelloWorldProto.internal_static_helloworld_HelloRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
@@ -276,12 +276,13 @@ public  final class HelloRequest extends
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       super(parent);
       maybeForceBuilderInitialization();
     }
     private void maybeForceBuilderInitialization() {
-      if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+      if (com.google.protobuf.GeneratedMessageV3
+              .alwaysUseFieldBuilders) {
       }
     }
     public Builder clear() {
