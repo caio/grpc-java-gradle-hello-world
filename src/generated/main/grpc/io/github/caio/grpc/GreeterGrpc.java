@@ -21,7 +21,7 @@ import static io.grpc.stub.ServerCalls.asyncUnimplementedStreamingCall;
  * </pre>
  */
 @javax.annotation.Generated(
-    value = "by gRPC proto compiler (version 1.0.2)",
+    value = "by gRPC proto compiler (version 1.0.3)",
     comments = "Source: hello_world.proto")
 public class GreeterGrpc {
 
