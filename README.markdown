@@ -11,7 +11,7 @@ a separate repository and a bit opinionated on generated code placement.
 ## Contents
 
 * Java 1.8
-* Gradle 3.2.1
+* Gradle 4.0
 * gRPC-java 1.4.0
 
 
