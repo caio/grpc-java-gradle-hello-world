@@ -12,7 +12,7 @@ a separate repository and a bit opinionated on generated code placement.
 
 * Java 1.8
 * Gradle 4.0
-* gRPC-java 1.4.0
+* gRPC-java 1.5.0
 
 
 ## Quick start

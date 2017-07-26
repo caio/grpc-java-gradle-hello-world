@@ -12,6 +12,7 @@ plugins {
   id "java"
   id "application"
   id "idea"
+  id 'com.github.ben-manes.versions' version '0.15.0'
 }
 
 group 'io.github.caio.grpc'
@@ -26,7 +27,7 @@ protobuf {
     }
     plugins {
         grpc {
-            artifact = 'io.grpc:protoc-gen-grpc-java:1.4.0'
+            artifact = 'io.grpc:protoc-gen-grpc-java:1.5.0'
         }
     }
     generateProtoTasks {
@@ -46,7 +47,7 @@ repositories {
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
-    compile 'io.grpc:grpc-all:1.4.0'
+    compile 'io.grpc:grpc-all:1.5.0'
 }
 
 idea {
