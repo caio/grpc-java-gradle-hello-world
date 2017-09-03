@@ -3,7 +3,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.google.protobuf:protobuf-gradle-plugin:0.8.1'
+        classpath 'com.google.protobuf:protobuf-gradle-plugin:0.8.3'
     }
 }
 
@@ -27,7 +27,7 @@ protobuf {
     }
     plugins {
         grpc {
-            artifact = 'io.grpc:protoc-gen-grpc-java:1.5.0'
+            artifact = 'io.grpc:protoc-gen-grpc-java:1.6.1'
         }
     }
     generateProtoTasks {
@@ -47,7 +47,7 @@ repositories {
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
-    compile 'io.grpc:grpc-all:1.5.0'
+    compile 'io.grpc:grpc-all:1.6.1'
 }
 
 idea {
