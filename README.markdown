@@ -1,19 +1,21 @@
 # Java gRPC Hello World using Gradle
 
-So, it's the first time I'm using `gradle`. And the first time I'm using
-`grpc`. And the first time I'm really using `IntelliJ's IDEA`. Took me
-a while to get this set up working nicely so I decided to save it for
-posterity.
-
 This code is pretty much gRPC's java hello world example, but on
 a separate repository and a bit opinionated on generated code placement.
 
 ## Contents
 
 * Java 1.8
-* Gradle 4.0
-* gRPC-java 1.6.1
+* Gradle 4.5
+* gRPC-java 1.9.0
 
+### Gradle Plugins
+
+The following plugins are already setup (in `build.gradle`):
+
+* [protobuf-gradle-plugin](https://github.com/google/protobuf-gradle-plugin)
+* [gradle-versions-plugin](https://github.com/ben-manes/gradle-versions-plugin)
+* [IDEA plugin](https://docs.gradle.org/current/userguide/idea_plugin.html)
 
 ## Quick start
 
@@ -31,15 +33,14 @@ NEW_PACKAGE_NAME=my.company.and.project
 gnu-sed, so if yours is not in your `PATH` variable you can manually set
 it: `SED=gsed ./rename_package.bash my.new.package`)
 
-* Generate code and the `IDEA` configuration:
+* Generate code and the IntelliJ's IDEA configuration:
 
 ```sh
 ./gradlew build
 ./gradlew idea
 ```
 
-* Import the project into `IDEA` (or just use whatever you prefer,
-   actually)
+* Import the project into IDEA
 
 * Start the server:
 
@@ -59,3 +60,14 @@ Then you'll have the server at
 `./build/install/grpc-java-gradle-hello-world/bin/hello-world-server` and the client at
 `./build/install/grpc-java-gradle-hello-world/bin/hello-world-client`.
 
+## Generating code
+
+A simple `./gradlew build` will generate all code derived from the `*.proto`
+files and if using IDEA the same will happen and source sets will be properly
+configured (meaning that the IDE will automatically know about the generated
+files). If for whatever reason you need to generate code but don't want to
+call the `build` task, you can issue the following:
+
+```sh
+./gradlew generateProto
+```
