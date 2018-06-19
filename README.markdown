@@ -6,8 +6,8 @@ a separate repository and a bit opinionated on generated code placement.
 ## Contents
 
 * Java 1.8
-* Gradle 4.5
-* gRPC-java 1.11.0
+* Gradle 4.8
+* gRPC-java 1.12.0
 
 ### Gradle Plugins
 
