@@ -3,11 +3,19 @@
 This code is pretty much gRPC's java hello world example, but on
 a separate repository and a bit opinionated on generated code placement.
 
+## Project Status
+
+I don't have much of a reason to keep this up-to-date and have been doing
+so in an ad-hoc manner. Feel free to open issues and/or pull-requests and
+I will jump on it as soon as I can, just don't expect this repository
+to be always up-to-date and following the best practices of the month.
+
 ## Contents
 
 * Java 1.8
 * Gradle 4.8
 * gRPC-java 1.12.0
+
 
 ### Gradle Plugins
 
