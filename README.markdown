@@ -80,7 +80,7 @@ call the `build` task, you can issue the following:
 ./gradlew generateProto
 ```
 
-## Update dependencies
+## Updating dependencies
 
 This project has the [gradle-versions](https://github.com/ben-manes/gradle-versions-plugin)
 plugin set up, so if you want to check for updates you can run:
@@ -89,4 +89,4 @@ plugin set up, so if you want to check for updates you can run:
 ./gradlew dependencyUpdates -Drevision=release
 ```
 
-And then update `build.gradle` accordinly.
+And then update `build.gradle` with the new versions accordingly.
