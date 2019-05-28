@@ -33,8 +33,7 @@ editing `gradle.properties`.
 * Rename the package
 
 ```
-NEW_PACKAGE_NAME=my.company.and.project
-./rename_package.bash $NEW_PACKAGE_NAME
+NEW_PACKAGE_NAME=my.company.and.project /bin/bash rename_package.bash $NEW_PACKAGE_NAME
 ```
 
 (The `rename_package.bash` script is very hacky. It also relies on
